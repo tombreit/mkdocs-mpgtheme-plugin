@@ -3,4 +3,4 @@
 # SPDX-License-Identifier: MIT
 
 graft src/mkdocs_mpgtheme_plugin/assets
-graft src/mkdocs_mpgtheme_plugin/overrides
+graft src/mkdocs_mpgtheme_plugin/mpgtheme

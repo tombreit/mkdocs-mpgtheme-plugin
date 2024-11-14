@@ -4,7 +4,7 @@
 
 [project]
 name = "mkdocs-mpgtheme-plugin"
-version = "0.2"
+version = "0.3"
 description = "MkDocs plugin to add some MPG branding to the Material for MkDocs theme"
 authors = [{name = "Thomas Breitner", email = "mail@thms.de"},]
 license = {file = "LICENSES/MIT.txt"}
