@@ -1,0 +1,120 @@
+<footer class="footer-nav md-footer">
+
+    <svg class="diag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><polygon points="100 0 100 10 0 10"></polygon></svg>
+
+    <div class="footer-nav-content">
+      <div class="md-grid">
+
+      {% if "navigation.footer" in features %}
+        {% if page.previous_page or page.next_page %}
+          {% if page.meta and page.meta.hide %}
+            {% set hidden = "hidden" if "footer" in page.meta.hide %}
+          {% endif %}
+          <nav class="md-footer__inner md-grid" aria-label="{{ lang.t('footer') }}" {{ hidden }}>
+            {% if page.previous_page %}
+              {% set direction = lang.t("footer.previous") %}
+              <a href="{{ page.previous_page.url | url }}" class="md-footer__link md-footer__link--prev" aria-label="{{ direction }}: {{ page.previous_page.title | e }}">
+                <div class="md-footer__button md-icon">
+                  {% set icon = config.theme.icon.previous or "material/arrow-left" %}
+                  {% include ".icons/" ~ icon ~ ".svg" %}
+                </div>
+                <div class="md-footer__title">
+                  <span class="md-footer__direction">
+                    {{ direction }}
+                  </span>
+                  <div class="md-ellipsis">
+                    {{ page.previous_page.title }}
+                  </div>
+                </div>
+              </a>
+            {% endif %}
+            {% if page.next_page %}
+              {% set direction = lang.t("footer.next") %}
+              <a href="{{ page.next_page.url | url }}" class="md-footer__link md-footer__link--next" aria-label="{{ direction }}: {{ page.next_page.title | e }}">
+                <div class="md-footer__title">
+                  <span class="md-footer__direction">
+                    {{ direction }}
+                  </span>
+                  <div class="md-ellipsis">
+                    {{ page.next_page.title }}
+                  </div>
+                </div>
+                <div class="md-footer__button md-icon">
+                  {% set icon = config.theme.icon.next or "material/arrow-right" %}
+                  {% include ".icons/" ~ icon ~ ".svg" %}
+                </div>
+              </a>
+            {% endif %}
+          </nav>
+        {% endif %}
+      {% endif %}
+      <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+          {% if config.extra.social %}
+            {% include "partials/social.html" %}
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+  
+<footer class="footer-legal">
+  <div class="md-grid">
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        {% include "partials/footer_logo.html" %}
+      </div>
+
+      <div class="footer-support-content md-typeset">
+        <div class="container">
+
+          {% if config.extra.support_email or config.extra.support_phone %}
+            <span>Support</span>
+            
+            {% if config.extra.support_email %}
+            <a href="mailto:{{ config.extra.support_email }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+              </svg>
+              Email
+            </a>
+            {% endif %}
+
+            {% if config.extra.support_phone %}
+            <a href="mailto:{{ config.extra.support_phone }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0"/>
+              </svg>
+              Phone
+            </a>
+            {% endif %}
+
+          {% endif %}
+
+        </div>
+      </div>
+
+      <div>
+        {% if config.extra.privacy_policy_url %}
+        <a href="{{ config.extra.privacy_policy_url }}">
+          Privacy policy
+        </a>
+        {% endif %}
+        {% if config.extra.imprint_url %}
+        <a href="{{ config.extra.imprint_url }}">
+          Imprint
+        </a>
+        {% endif %}
+        {% if config.extra.copyright_string %}
+        <span>
+          © {{ config.extra.copyright_string }}
+        </span>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</footer>

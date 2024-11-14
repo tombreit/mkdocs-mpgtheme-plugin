@@ -1,0 +1,39 @@
+# SPDX-FileCopyrightText: 2024 Thomas Breitner
+#
+# SPDX-License-Identifier: MIT
+
+[project]
+name = "mkdocs-mpgtheme-plugin"
+version = "0.1"
+description = "MkDocs plugin to add some MPG branding to the Material for MkDocs theme"
+authors = [{name = "Thomas Breitner", email = "mail@thms.de"},]
+license = {file = "LICENSES/MIT.txt"}
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Framework :: MkDocs",
+    "Topic :: Documentation",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+]
+
+dependencies = [
+    "mkdocs>=1.6",
+    "mkdocs-material>=9.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "reuse",
+]
+
+[project.entry-points."mkdocs.plugins"]
+mpgtheme = "mkdocs_mpgtheme_plugin.plugin:MpgThemePlugin"
+
+[project.urls]
+Repository = "https://github.com/tombreit/mkdocs-mpgtheme-plugin"
+Homepage = "https://github.com/tombreit/mkdocs-mpgtheme-plugin"
+Documentation = "https://github.com/tombreit/mkdocs-mpgtheme-plugin/blob/main/README.md"
+Issues = "https://github.com/tombreit/mkdocs-mpgtheme-plugin/issues"

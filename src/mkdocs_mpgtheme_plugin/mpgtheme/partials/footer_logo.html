@@ -1,0 +1,5 @@
+{% if config.theme.logo %}
+    <img src="{{ config.theme.footer_logo | url }}" alt="logo">
+{% else %}
+    <img src="{{ base_url }}/assets/mpgtheme/images/footer-logo-placeholder.svg" alt="">
+{% endif %}

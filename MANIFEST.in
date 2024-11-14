@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2024 Thomas Breitner <mail@thms.de>
+#
+# SPDX-License-Identifier: MIT
+
+graft src/mkdocs_mpgtheme_plugin/assets
+graft src/mkdocs_mpgtheme_plugin/overrides

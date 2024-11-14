@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2024 Thomas Breitner <mail@thms.de>
+#
+# SPDX-License-Identifier: MIT
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ruff-cache/
+
+/build/
+/site/

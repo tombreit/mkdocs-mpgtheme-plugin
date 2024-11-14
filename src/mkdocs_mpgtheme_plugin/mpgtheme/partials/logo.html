@@ -1,0 +1,7 @@
+<div class="header-logo-container">
+{% if config.theme.logo %}
+  <img src="{{ config.theme.logo | url }}" alt="logo">
+{% else %}
+  <img src="{{ base_url }}/assets/mpgtheme/images/header-logo-placeholder.svg" alt="">
+{% endif %}
+</div>

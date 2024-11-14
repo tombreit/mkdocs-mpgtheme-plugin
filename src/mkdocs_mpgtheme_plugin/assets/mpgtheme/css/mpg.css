@@ -1,0 +1,124 @@
+/*
+ * SPDX-FileCopyrightText: 2024 Thomas Breitner <mail@thms.de>
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+:root {
+    /* MPG color scheme */
+    --mpg_color_gray: #eee;
+    --mpg_color_green_dark: rgb(0,85,85);
+    --mpg_color_green_light: rgb(0,108,102);
+
+    /* Material for MkDocs color scheme */
+    --md-primary-fg-color: var(--mpg_color_green_dark);
+    --md-primary-fg-color--light: var(--mpg_color_green_light);
+    --md-primary-fg-color--dark: var(--mpg_color_green_dark);
+
+    --md-primary-bg-color: #fff;
+    --md-primary-bg-color--light: #ffffffb3;
+    
+    --md-accent-fg-color: #526cfe;
+    --md-accent-fg-color--transparent: #526cfe1a;
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: #ffffffb3;
+
+    --md-text-font: 'Roboto', sans-serif;
+  }
+
+
+.md-header {
+  background-color: var(--mpg_color_gray);
+  color: var(--md-primary-fg-color);
+
+  .md-header__topic:first-child {
+    font-weight: normal;
+  }
+  .md-tabs {
+    background-color: var(--mpg_color_gray);
+    color: var(--md-primary-fg-color);
+
+    .md-tabs__link {
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+.md-header__button.md-logo {
+  padding: 0;
+  margin: 0;
+
+  img {
+    display: block;
+    height: 50px;
+    max-height: 100%;
+    padding-left: 1em;
+    padding-right: 2em;
+  }
+}
+
+.header-logo-container {
+  background-image: url(../images/header-logo-bg.svg);
+  background-size: 100% 100%;
+  background-position-y: top;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  padding: 1em 2em 1em 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+
+.footer-nav {
+  background-color: white; 
+}
+.footer-nav-content {
+  padding: 5px 0;
+  background-color: var(--md-primary-fg-color--light);
+}
+
+svg.diag {
+  display: block;
+  width: 100%;
+  height: 55px;
+  position: relative;
+  bottom: -1px;
+}
+svg.diag polygon {
+  background-color: white;
+  fill: var(--md-primary-fg-color--light);
+}
+.footer-nav-content {
+  color: white;
+}
+.footer-nav-content a {
+    margin: 0 0.5em;
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-nav .md-footer-meta {
+  background-color: transparent;
+}
+
+.footer-legal {
+  background-color: var(--md-primary-fg-color--dark);
+  color: white;
+  padding: 1em 0;
+  line-height: 50px;
+
+  img {
+    display: block;
+    max-height: 50px;
+    height: 50px
+  }
+
+  a, 
+  span {
+    color: white;
+    margin-left: 1em;
+  }
+}
