@@ -28,6 +28,10 @@ dev = [
     "pre-commit",
     "reuse",
 ]
+pypi = [
+    "build",
+    "twine",
+]
 
 [project.entry-points."mkdocs.plugins"]
 mpgtheme = "mkdocs_mpgtheme_plugin.plugin:MpgThemePlugin"
@@ -37,3 +41,7 @@ Repository = "https://github.com/tombreit/mkdocs-mpgtheme-plugin"
 Homepage = "https://github.com/tombreit/mkdocs-mpgtheme-plugin"
 Documentation = "https://github.com/tombreit/mkdocs-mpgtheme-plugin/blob/main/README.md"
 Issues = "https://github.com/tombreit/mkdocs-mpgtheme-plugin/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
