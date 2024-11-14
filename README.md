@@ -13,7 +13,7 @@ A MkDocs plugin that makes the Material for MkDocs theme look a bit like MPG.
 - Install this plugin:
 
    ```bash
-   pip install ...
+   pip install mkdocs-mpgtheme-plugin
    ```
 
 - Activate this plugin in your MkDocs project:
