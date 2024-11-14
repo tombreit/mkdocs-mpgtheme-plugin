@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 
-name: Deploy Python Package
+name: Deploy Python Package to PyPI
 
 on:
   release:
