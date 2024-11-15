@@ -34,8 +34,7 @@ A MkDocs plugin that makes the Material for MkDocs theme look a bit like MPG.
     copyright_string: ACME Inc.
    ```
 
-- Save and reference your header and footer logo files.<br><p style="color: gray; font-size: smaller;">
-Due to licensing and copyright issues, the logo files are not part of this project.
-</p>
+- Save and reference your header and footer logo files.<br><small>
+Due to licensing and copyright issues, the logo files are not part of this project, but we ship placeholder files for `header-logo.svg` and `footer-logo.svg`. Just set your logos (format: SVG) via `logo` and `footer_logo` in the `theme`config (see above).</small>
 
 - Done
