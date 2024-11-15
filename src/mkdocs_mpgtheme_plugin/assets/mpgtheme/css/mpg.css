@@ -110,6 +110,20 @@ svg.diag polygon {
   padding: 1em 0;
   line-height: 50px;
 
+  .footer-legal-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    .footer-legal-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
   img {
     display: block;
     max-height: 50px;
