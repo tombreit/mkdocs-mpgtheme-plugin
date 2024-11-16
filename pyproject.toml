@@ -4,7 +4,7 @@
 
 [project]
 name = "mkdocs-mpgtheme-plugin"
-version = "0.3"
+dynamic = ["version"]
 description = "MkDocs plugin to add some MPG branding to the Material for MkDocs theme"
 authors = [{name = "Thomas Breitner", email = "mail@thms.de"},]
 license = {file = "LICENSES/MIT.txt"}
@@ -43,5 +43,7 @@ Documentation = "https://github.com/tombreit/mkdocs-mpgtheme-plugin/blob/main/RE
 Issues = "https://github.com/tombreit/mkdocs-mpgtheme-plugin/issues"
 
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
