@@ -58,6 +58,23 @@
   }
 }
 
+@media screen and (max-width: 76.2344em) {
+  .md-nav--primary .md-nav__title .md-logo {
+    display: block;
+    left: .2rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .2rem;
+    top: 0;
+  }
+
+  .md-nav--primary .md-nav__title {
+    height: 6.6rem;
+    padding-top: 4rem;
+  }
+}
+
 .header-logo-container {
   background-image: url(../images/header-logo-bg.svg);
   background-size: 100% 100%;
