@@ -1,4 +1,4 @@
-# MkDocs Material MPG Theme
+# MkDocs MPG Theme
 
 A MkDocs plugin that makes the Material for MkDocs theme look a bit like MPG.
 
@@ -16,7 +16,6 @@ This plugin uses the "Material for MkDocs" theme and just adds some visual touch
 ## Usage
 
 - Setup MkDocs and Material for MkDocs theme
-
 - Install this plugin:
 
    ```bash
