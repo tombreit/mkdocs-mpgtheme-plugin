@@ -2,6 +2,8 @@
 
 A MkDocs plugin that makes the Material for MkDocs theme look a bit like MPG.
 
+This plugin uses the "Material for MkDocs" theme and just adds some visual touches.
+
 ## Requirements
 
 - [MkDocs](https://www.mkdocs.org/getting-started/)
