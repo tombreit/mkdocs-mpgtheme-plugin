@@ -1,0 +1,161 @@
+/*
+ * SPDX-FileCopyrightText: 2024 Thomas Breitner <mail@thms.de>
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+:root {
+    /* MPG color scheme */
+    --mpg_color_gray: #eee;
+    --mpg_color_green_dark: rgb(0,85,85);
+    --mpg_color_green_light: rgb(0,108,102);
+
+    /* Material for MkDocs color scheme */
+    --md-primary-fg-color: var(--mpg_color_green_dark);
+    --md-primary-fg-color--light: var(--mpg_color_green_light);
+    --md-primary-fg-color--dark: var(--mpg_color_green_dark);
+
+    --md-primary-bg-color: #fff;
+    --md-primary-bg-color--light: #ffffffb3;
+    
+    --md-accent-fg-color: #526cfe;
+    --md-accent-fg-color--transparent: #526cfe1a;
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: #ffffffb3;
+
+    --md-text-font: 'Roboto', sans-serif;
+  }
+
+
+.md-header {
+  background-color: var(--mpg_color_gray);
+  color: var(--md-primary-fg-color);
+
+  .md-header__topic:first-child {
+    font-weight: normal;
+  }
+  .md-tabs {
+    background-color: var(--mpg_color_gray);
+    color: var(--md-primary-fg-color);
+
+    .md-tabs__link {
+      text-transform: uppercase;
+    }
+  }
+}
+
+[data-md-color-scheme=slate][data-md-color-primary=teal] {
+  .md-header, .md-tabs {
+    background-color: var(--md-primary-fg-color--dark);
+    color: var(--mpg_color_gray);
+  }
+}
+
+.md-header__button.md-logo {
+  padding: 0;
+  margin: 0;
+
+  img {
+    display: block;
+    height: 50px;
+    max-height: 100%;
+    padding-left: 1em;
+    padding-right: 2em;
+  }
+}
+
+@media screen and (max-width: 76.2344em) {
+  .md-nav--primary .md-nav__title .md-logo {
+    display: block;
+    left: .2rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .2rem;
+    top: 0;
+  }
+
+  .md-nav--primary .md-nav__title {
+    height: 6.6rem;
+    padding-top: 4rem;
+  }
+}
+
+.header-logo-container {
+  background-image: url(../images/header-logo-bg.svg);
+  background-size: 100% 100%;
+  background-position-y: top;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  padding: 1em 2em 1em 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+
+.footer-nav {
+  background-color: var(--md-default-bg-color); 
+
+  svg.diag {
+    display: block;
+    width: 100%;
+    height: 55px;
+    position: relative;
+    bottom: -1px;
+  }
+  svg.diag polygon {
+    background-color: white;
+    fill: var(--md-primary-fg-color--light);
+  }
+
+  .md-footer-meta {
+    background-color: transparent;
+  }
+}
+
+.footer-nav-content {
+  padding: 5px 0;
+  background-color: var(--md-primary-fg-color--light);
+  color: white;
+
+  a {
+    margin: 0 0.5em;
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.footer-legal {
+  background-color: var(--md-primary-fg-color--dark);
+  color: white;
+  padding: 1em 0;
+  line-height: 50px;
+
+  .footer-legal-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    .footer-legal-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  img {
+    display: block;
+    max-height: 50px;
+    height: 50px
+  }
+
+  a, 
+  span {
+    color: white;
+    margin-left: 1em;
+  }
+}
