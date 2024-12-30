@@ -6,7 +6,7 @@ name: Deploy Python Package to PyPI
 on:
   push:
     tags:
-      - v*
+      - "v*"
   workflow_run:
     workflows: ["Automated CalVer Tagging"]
     types: [completed]

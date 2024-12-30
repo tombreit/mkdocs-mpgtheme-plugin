@@ -21,7 +21,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          VERSION=$(date +'%Y.%m').$(git rev-parse --short HEAD)
+          VERSION=v$(date +'%Y.%-m.%-d')+$(git rev-parse --short HEAD)
           # Store the tag name in an environment variable for later use/steps
           echo "TAG_NAME=$VERSION" >> $GITHUB_ENV
           git tag -a "$VERSION" -m "Release $VERSION"
