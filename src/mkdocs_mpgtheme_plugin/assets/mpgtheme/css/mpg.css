@@ -162,5 +162,12 @@
 
 
 .md-typeset a {
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-underline-position: under;
+  text-underline-offset: -0.1em;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
+  }
 }
