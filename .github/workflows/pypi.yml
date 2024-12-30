@@ -3,13 +3,13 @@
 # SPDX-License-Identifier: MIT
 
 name: Deploy Python Package to PyPI
-
 on:
-  # release:
-  #   types: [published]
   push:
     tags:
       - v*
+  workflow_run:
+    workflows: ["tagging"]
+    types: [completed]
 
 permissions:
   contents: write

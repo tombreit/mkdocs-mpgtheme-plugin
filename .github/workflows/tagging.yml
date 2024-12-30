@@ -25,4 +25,4 @@ jobs:
           # Store the tag name in an environment variable for later use/steps
           echo "TAG_NAME=$VERSION" >> $GITHUB_ENV
           git tag -a "$VERSION" -m "Release $VERSION"
-          git push origin "$VERSION"
+          git push origin "$VERSION" --tags
