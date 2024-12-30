@@ -159,3 +159,8 @@
     margin-left: 1em;
   }
 }
+
+
+.md-typeset a {
+  text-decoration: underline;
+}
