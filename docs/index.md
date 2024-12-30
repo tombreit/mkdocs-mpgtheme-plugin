@@ -1,6 +1,13 @@
-# Home
+# MkDocs MPG Theme
 
-Aenean non orci a urna dictum lacinia. Pellentesque rutrum sem a massa ultricies, sed rhoncus eros aliquam. Etiam tempor enim ac tristique tincidunt. Etiam tristique tempor magna ut laoreet. 
+MkDocs plugin to add some MPG branding to the Material for MkDocs theme.
+
+This plugin uses the "Material for MkDocs" theme and just adds some visual touches.
+
+## Project
+
+- [Repository](https://github.com/tombreit/mkdocs-mpgtheme-plugin)
+- [PyPI](https://pypi.org/project/mkdocs-mpgtheme-plugin/)
 
 ## Credits
 
@@ -8,4 +15,8 @@ Aenean non orci a urna dictum lacinia. Pellentesque rutrum sem a massa ultricies
 - [MkDocs Material Theme](https://squidfunk.github.io/mkdocs-material/)
 - [MkDocs MPG Theme](https://tombreit.github.io/mkdocs-mpgtheme-plugin/)
 
-Maecenas et enim ac dui pharetra blandit. Ut eu nisl non mi tempus molestie at quis libero. Sed est ipsum, sodales eget turpis sed, ullamcorper aliquet ipsum. Cras non dui et lorem lacinia pellentesque non at nisi. In bibendum sed mauris dignissim rhoncus. Aliquam hendrerit sapien est, a tristique libero mollis et. Nulla nec bibendum libero, eget congue purus. 
+## Notes
+
+- Installing this plugin will install `mkdocs` and `mkdocs-material` as dependencies.
+- For a more complete configuration, see our demo [`mkdocs.yml`](https://github.com/tombreit/mkdocs-mpgtheme-plugin/blob/main/mkdocs.yml).
+- Due to licensing and copyright issues, the MPG logo files are not part of this project, but we ship placeholder files for `header-logo.svg` and `footer-logo.svg`. Just set your logos (format: SVG) via `logo` and `footer_logo` in the `theme` config (see above).

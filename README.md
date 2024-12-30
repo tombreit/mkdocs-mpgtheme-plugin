@@ -13,10 +13,14 @@ This plugin uses the "Material for MkDocs" theme and just adds some visual touch
 
 <https://tombreit.github.io/mkdocs-mpgtheme-plugin/>
 
+## PyPI Package
+
+<https://pypi.org/project/mkdocs-mpgtheme-plugin/>
+
 ## Usage
 
 - Setup MkDocs and Material for MkDocs theme
-- Install this plugin:
+- Install this plugin from [PyPI](https://pypi.org/project/mkdocs-mpgtheme-plugin/):
 
    ```bash
    pip install mkdocs-mpgtheme-plugin
