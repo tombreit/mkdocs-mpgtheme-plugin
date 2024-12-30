@@ -3,6 +3,11 @@
 # SPDX-License-Identifier: MIT
 
 name: Deploy Python Package to PyPI
+
+concurrency:  
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
     tags:
