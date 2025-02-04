@@ -3,6 +3,16 @@ strict: true
 plugins:
   - search
   - mpgtheme
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
+        - locale: de
+          name: Deutsch
+          build: true
 theme:
   name: material
   # logo: _assets/header-logo.svg
