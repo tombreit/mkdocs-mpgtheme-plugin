@@ -1,0 +1,602 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="/assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>MkDocs MPG Theme</title>
+      
+    
+    
+      <link rel="stylesheet" href="/assets/stylesheets/main.8608ea7d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="/assets/mpgtheme/css/mpg.css">
+    
+      <link rel="stylesheet" href="/assets/mpgtheme/css/mpg.css">
+    
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+   <div style="text-align: center">
+        Add your institute logo and the Minerva yourself:
+        <a href="https://github.com/tombreit/mkdocs-mpgtheme-plugin/blob/main/mkdocs.yml">
+            mkdocs.yml:
+            <span style="font-family: monospace;">logo</span>, <span style="font-family: monospace;">footer_logo</span>
+        </a>
+   </div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      <!--
+Copyright (c) Martin Donath <martin.donath@squidfunk.com>
+SPDX-FileCopyrightText: 2024 Martin Donath <martin.donath@squidfunk.com>
+
+SPDX-License-Identifier: MIT
+-->
+
+<!--
+  This file is part of the "mkdocs-material" theme, an open source project
+  that is published under the MIT license. For more information, see the
+  accompanying LICENSE file or visit the source file on GitHub:
+  https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/header.html
+-->  
+  
+
+
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href="/de/" title="MkDocs MPG Theme" class="md-header__button md-logo" aria-label="MkDocs MPG Theme" data-md-component="logo">
+      <div class="header-logo-container">
+
+  <img src="//assets/mpgtheme/images/header-logo-placeholder.svg" alt="">
+
+</div>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MkDocs MPG Theme
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sprache wechseln">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/faq/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/de/faq/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Hauptnavigation" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/de/" class="md-tabs__link">
+        
+  
+    
+  
+  Startseite
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="/de/about/" class="md-tabs__link">
+          
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="/de/faq/" class="md-tabs__link">
+          
+  
+    
+  
+  Faq
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="/de/" title="MkDocs MPG Theme" class="md-nav__button md-logo" aria-label="MkDocs MPG Theme" data-md-component="logo">
+      <div class="header-logo-container">
+
+  <img src="//assets/mpgtheme/images/header-logo-placeholder.svg" alt="">
+
+</div>
+    </a>
+    MkDocs MPG Theme
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/de/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Startseite
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="/de/about/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="/de/faq/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Faq
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Faq
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  <h1>404 - Not found</h1>
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Zurück zum Seitenanfang
+</button>
+        
+      </main>
+      
+        <footer class="footer-nav md-footer">
+
+  <svg class="diag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+    <polygon points="100 0 100 10 0 10"></polygon>
+  </svg>
+
+  <div class="footer-nav-content">
+    <div class="md-grid">
+
+      <!--
+Copyright (c) Martin Donath <martin.donath@squidfunk.com>
+SPDX-FileCopyrightText: 2024 Martin Donath <martin.donath@squidfunk.com>
+
+SPDX-License-Identifier: MIT
+-->
+
+<!--
+  This snippet is part of the "mkdocs-material" theme, an open source project
+  that is published under the MIT license. For more information, see the
+  accompanying LICENSE file or visit the source file on GitHub:
+  https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/partials/footer.html
+-->
+
+
+<!-- Link to previous and/or next page -->
+
+  
+
+
+      <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<footer class="footer-legal">
+  <div class="md-grid">
+
+    <div class="footer-legal-content">
+      <div>
+        
+    <img src="//assets/mpgtheme/images/footer-logo-placeholder.svg" alt="">
+
+      </div>
+
+      <div class="footer-support-content md-typeset">
+        <div class="container">
+
+          
+          <span>Support</span>
+
+          
+          <a href="mailto:mail@thms.de">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+            </svg>
+            Email
+          </a>
+          
+
+          
+          <a href="tel:+49 123 456 789">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0" />
+            </svg>
+            Phone
+          </a>
+          
+
+          
+
+        </div>
+      </div>
+
+      <div>
+        
+        <a href="https://example.org/privacy-policy/">
+          Privacy policy
+        </a>
+        
+        
+        <a href="https://example.org/imprint/">
+          Imprint
+        </a>
+        
+        
+        <span>
+          © ACME Inc.
+        </span>
+        
+      </div>
+    </div>
+
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "/", "features": ["search.suggest", "search.highlight", "navigation.footer", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "navigation.indexes"], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="/assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
