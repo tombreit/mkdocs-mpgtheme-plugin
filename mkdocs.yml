@@ -17,6 +17,7 @@ theme:
   name: material
   # logo: _assets/header-logo.svg
   # footer_logo: _assets/footer-logo.svg
+  custom_dir: overrides
   font: false
   features:
     - search.suggest

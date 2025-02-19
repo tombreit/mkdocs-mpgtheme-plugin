@@ -23,6 +23,8 @@
     --md-accent-bg-color: #fff;
     --md-accent-bg-color--light: #ffffffb3;
 
+    --md-footer-bg-color: var(--mpg_color_green_dark);
+
     --md-text-font: 'Roboto', sans-serif;
   }
 
@@ -94,6 +96,20 @@
   align-items: stretch;
 }
 
+.md-banner {
+  background-color: var(--mpg_color_green_light);
+  color: white;
+
+  a {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+
+}
 
 .footer-nav {
   background-color: var(--md-default-bg-color); 
@@ -117,7 +133,7 @@
 
 .footer-nav-content {
   padding: 5px 0;
-  background-color: var(--md-primary-fg-color--light);
+  background-color: var(--mpg_color_green_light);
   color: white;
 
   a {
@@ -128,7 +144,7 @@
 }
 
 .footer-legal {
-  background-color: var(--md-primary-fg-color--dark);
+  background-color: var(--mpg_color_green_dark);
   color: white;
   padding: 1em 0;
   line-height: 50px;
